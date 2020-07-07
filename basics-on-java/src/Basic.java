@@ -1,6 +1,15 @@
 public class Basic {
     public static void main(String[] args){
-        //display hello world on console
-        System.out.println("Hello World");
+        //declare variables
+        double radius, area;
+
+        //set value of radius
+        radius = 20;
+
+        //compute area
+        area = Math.pow(radius,2) * 3.14159;
+
+        //display area
+        System.out.println("The area is " + area);
     }
 }
