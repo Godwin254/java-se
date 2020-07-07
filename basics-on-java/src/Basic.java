@@ -10,6 +10,6 @@ public class Basic {
         area = Math.pow(radius,2) * 3.14159;
 
         //display area
-        System.out.println("The area is " + area);
+        System.out.println("The area with radius " + radius + " is " + area);
     }
 }
