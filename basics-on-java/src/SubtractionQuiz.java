@@ -7,8 +7,8 @@ public class SubtractionQuiz {
         Scanner input = new Scanner(System.in);
 
         //generate two random numbers
-        int number1 = (int)(Math.random() * 10);
-        int number2 = (int)(Math.random() * 10);
+        int number1 = (int)(Math.random() * 100);
+        int number2 = (int)(Math.random() * 100);
 
         //swap numbers
         if (number1 < number2){
