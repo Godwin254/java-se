@@ -13,7 +13,7 @@ public class ChangeToFahrenheit {
         double celsius_value = input.nextDouble();
 
         //compute temperature in fahrenheit
-        double fahrenheit = (9 /5) * celsius_value + 32;
+        double fahrenheit = (9/5) * celsius_value + 32;
 
         //display the value of celsius in fahrenheit
         System.out.println(celsius_value + "Celsius is equivalent to " + fahrenheit + "fahrenheit");

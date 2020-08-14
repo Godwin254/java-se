@@ -13,12 +13,11 @@ public class Leap_year {
         int year = input.nextInt();
 
         //return message whether a leap or not
-        if ((year % 4 == 0 && year % 100 != 0 || year % 400 == 0)){
-            System.out.println(year + " is a leap year");
-        }
-        else{
+        if ((year % 4 == 0 && year % 100 != 0 || year % 400 == 0))
+            System.out.printf("leap year %3d%n", year);
+        else
             System.out.println(year + " is not a leap year");
-        }
+
 
     }
 }

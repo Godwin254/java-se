@@ -1,4 +1,8 @@
 //program to determine domestic and wild animals
+/*
+*
+* switch statement
+* */
 import java.util.*;
 
 public class TypeOfAnimal {
