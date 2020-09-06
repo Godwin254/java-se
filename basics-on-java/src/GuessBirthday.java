@@ -115,6 +115,6 @@ public class GuessBirthday{
             System.out.println("Thanks for your time... you could try again later! Bye");
 
 
-
+        input.close();
     }
 }

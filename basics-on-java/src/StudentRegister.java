@@ -5,8 +5,8 @@ public class StudentRegister {
     //main method
     public static void main(String[] args){
 
-        //create object instances
-        //set initial name
+        //create object instances;
+        //set initial name;
         Student studentA = new Student("James Kayle", 78, 67);
 
         Scanner input = new Scanner(System.in);
