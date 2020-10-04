@@ -64,4 +64,5 @@ public class AccountsInfo {
     public static double taxBalance(double accountBalance) {
         return (accountBalance * ((double) 6/100));
     }
+
 }

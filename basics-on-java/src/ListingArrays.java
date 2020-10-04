@@ -23,8 +23,22 @@ public class ListingArrays {
             total += array[count];
             System.out.printf("%5d%8d%n", count, array[count]);
 
+            //array distribution
+            System.out.printf("%d - %d: ", count * 6, count * 6 + 6);
+
         }
 
         System.out.printf("%nTotal is: %d%n", total);
+
+        int[] numberList = {1,2,3,4,5,6,7,8,9};
+        int sum = 0;
+
+        for(int num : numberList) {
+            System.out.printf("%d%n", num);
+            sum += num;
+        }
+
+        System.out.printf("Sum: %d%n", sum);
+
     }
 }
