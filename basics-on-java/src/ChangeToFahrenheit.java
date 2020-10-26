@@ -7,7 +7,7 @@ public class ChangeToFahrenheit {
     //static methods
     //method 1: convert to fahrenheits
     public static double toFahrenheits(double celsius) {
-        return ((celsius + 32) * (double)(9/5));
+        return (double) (9 / 5) * (celsius + 32);
     }
     //method 2: convert to celsius
     public static double toCelsius(double fahrenheits) {

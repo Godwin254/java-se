@@ -5,6 +5,7 @@ public class Solution7 {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        //Books books;
         //input array size
         System.out.print("Enter array size: ");
         int n = scanner.nextInt();
@@ -22,13 +23,13 @@ public class Solution7 {
 
             System.out.printf("%d", arr[i]);
         }
-        /*
+        
         for (int value : arr
              ) {
             System.out.printf("%d", value);
         }
 
-         */
+
 
         scanner.close();
     }
