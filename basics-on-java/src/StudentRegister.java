@@ -27,9 +27,15 @@ public class StudentRegister {
         System.out.print("Enter your end-term mark: ");
         int endTermMark = input.nextInt();
 
-        studentA.setName(name);
-        studentA.setMidTermMark(midTermMark);
-        studentA.setEndTermMark(endTermMark);
+
+
+        try{
+            studentA.setName(name);
+            studentA.setMidTermMark(midTermMark);
+            studentA.setEndTermMark(endTermMark);
+        }catch (IllegalArgumentException e){
+            e.getMessage();
+        }
 
         System.out.printf("Current name is %s%n", studentA.getStudentName());
         System.out.printf("Current mid-term mark is %d%n", studentA.getMidTermTest());

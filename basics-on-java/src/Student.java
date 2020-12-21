@@ -1,9 +1,11 @@
+
 public class Student {
 
     //instance variable
     private String StudentName;
     private int midTermMark;
     private int endTermMark;
+
 
     //add class constructor
     public Student(String StudentName, int midTermMark, int endTermMark){
@@ -18,8 +20,10 @@ public class Student {
     //method to set name
     public void setName(String StudentName){
         //check whether names are similar
-        if (StudentName.equals("James")){
+        if (StudentName.equals("James") && !ValidateInput.validFirstName(StudentName)){
             System.out.printf("%s%n", "Incorrect! Name is similar");
+            throw new IllegalArgumentException("Incorrect! Name is similar\n Incorrect name format");
+
         }else {
             this.StudentName = StudentName;
         }
@@ -29,6 +33,8 @@ public class Student {
     public void setMidTermMark(int midTermMark){
         if (midTermMark > 0){
             this.midTermMark = midTermMark;
+        }else{
+            throw new IllegalArgumentException("mid-term Marks cannot be less that zero");
         }
     }
 
@@ -36,7 +42,8 @@ public class Student {
     public void setEndTermMark(int endTermMark){
         if (endTermMark > 0){
             this.endTermMark = endTermMark;
-        }
+        }else
+            throw new IllegalArgumentException("end-term Marks cannot be less that zero");
     }
 
     //method to get student name
