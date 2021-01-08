@@ -32,7 +32,7 @@ public class TestPersonsAge {
     //instance method to increase age
     public void yearPasses() {
         // Increment this person's age.
-        age += 1;
+        age ++;
     }
 
     public static void main(String[] args) {
