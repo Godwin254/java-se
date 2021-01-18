@@ -7,7 +7,7 @@ public class Area {
     public static final Scanner sc = new Scanner(System.in);
 
     //function  to perform area of square
-    public static double areaOfSquare(double length){
+    public static double areaOfSquare(double length)throws InputMismatchException{
 
         //area = length * length
         return (length * length);
@@ -19,7 +19,7 @@ public class Area {
         return (length * width);
     }
     //area of triangle
-    public static double areaOfTriangle(double base , double height)throws ArithmeticException {
+    public static double areaOfTriangle(double base , double height)throws ArithmeticException, InputMismatchException {
 
         //area = 1/2 * base * height
         return ((double) 1/2 * base * height );
@@ -28,22 +28,33 @@ public class Area {
     public static void main(String[] args){
 
         //add code here
-        System.out.print("Enter length(base): ");
-        double length = sc.nextDouble();
+        try {
 
-        System.out.print("Enter width: ");
-        double width = sc.nextDouble();
 
-        System.out.print("Enter height: ");
-        double height = sc.nextDouble();
+            System.out.print("Enter length(base): ");
+            double length = sc.nextDouble();
 
-        double _square = areaOfSquare(length);
-        double _rectangle = areaOfRectangle(length,width);
-        double _triangle = areaOfTriangle(length,height);
+            System.out.print("Enter width: ");
+            double width = sc.nextDouble();
 
-        System.out.printf("%-10s%-10s%-10s%n", "Square", "Rectangle", "Triangle");
+            System.out.print("Enter height: ");
+            double height = sc.nextDouble();
 
-        System.out.printf("%-10.2f%-10.2f%-10.2f%n", _square, _rectangle, _triangle);
+            double _square = areaOfSquare(length);
+            double _rectangle = areaOfRectangle(length, width);
+            double _triangle = areaOfTriangle(length, height);
+
+            System.out.printf("%-10s%-10s%-10s%n", "Square", "Rectangle", "Triangle");
+
+            System.out.printf("%-10.2f%-10.2f%-10.2f%n", _square, _rectangle, _triangle);
+        }
+        catch (InputMismatchException e){
+            System.err.printf("%s%n", e.getMessage());
+            System.out.println("Enter a integer value");
+            sc.nextDouble();
+        }finally {
+            sc.close();
+        }
 
     }
 }

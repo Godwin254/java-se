@@ -54,3 +54,9 @@ public class TrackLine {
         System.out.printf("%.3f Metres makes %.3f Track sections%n", lengthInMetres, trackSectionsNeeded);
     }
 }
+
+class NewClass{
+    public static void main(){
+
+    }
+}

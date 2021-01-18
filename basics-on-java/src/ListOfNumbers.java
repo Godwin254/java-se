@@ -23,7 +23,7 @@ public class ListOfNumbers {
             out.println("Value at: " + i + " = " + list.get(i));
         }
         out.close();
-        return null;
+        return out;
     }
 
     public static void main(String[] args) throws IOException {
