@@ -1,5 +1,10 @@
 
 //music app class
+
+//Recently added music
+//Favorite music
+//Albums
+//Artist
 public class BoomPlayer {
     public static void main(String[] args){
 
