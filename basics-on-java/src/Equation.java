@@ -12,7 +12,7 @@ public class Equation {
 
         //System.out.println("Enter values of a, b & c from the quadratic equation");
 
-        double X = findX(1, -2, -15);
+        double X = findX(1, 0, 4);
 
         System.out.printf("%n X = %f %n", X );
     }
