@@ -10,10 +10,16 @@ public class PhysicsTeacher extends Teacher{
         System.out.printf("School: %s%n", teacher1.school);
         System.out.printf("Location: %s%n", teacher1.location);
         System.out.printf("Does: %s%n", teacher1.does());
+        System.out.printf("Room: %s%n", teacher1.room());
+        System.out.printf("Subject: %s%n", teacher1.getSubject());
     }
 
     String getName(){
         return "Mr Angelo";
+    }
+
+    String getSubject(){
+        return "Physics";
     }
 
 }
