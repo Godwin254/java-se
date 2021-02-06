@@ -7,4 +7,8 @@ public class Teacher {
     String does(){
         return "Teaching...";
     }
+
+    String room(){
+        return "Staff-room";
+    }
 }
