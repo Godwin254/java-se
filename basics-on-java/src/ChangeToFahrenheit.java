@@ -29,5 +29,6 @@ public class ChangeToFahrenheit {
 
         System.out.printf("Fahrenheits: %.2f F %n", toFahrenheits(temperature));
 
+        input.close();
     }
 }

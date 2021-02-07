@@ -21,5 +21,7 @@ public class TypeOfAnimal {
             case "tiger": System.out.println(animal + " is a wild animal");break;
             default: System.out.println(animal + " is not an animal");
         }
+
+        input.close();
     }
 }

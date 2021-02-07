@@ -11,5 +11,6 @@ public class Tokenize {
         System.out.println(tokens.length);
         for(String token : tokens) System.out.println(token);
 
+        sc.close();
     }
 }

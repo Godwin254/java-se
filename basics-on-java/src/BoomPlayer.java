@@ -15,11 +15,11 @@ public class BoomPlayer {
 class MusicList{
 
     //fields
-    private String[] music;
+    //private String[] music;
 
     //constructor
     public MusicList(String[] music, String[] music1) throws Exception{
-        this.music = music1;
+        //this.music = music1;
         try{
             throw new Exception();
         }

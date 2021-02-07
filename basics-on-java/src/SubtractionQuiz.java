@@ -32,5 +32,6 @@ public class SubtractionQuiz {
             System.out.println( number1 + " - " + number2 + " = " + (number1 - number2));
         }
 
+        input.close();
     }
 }

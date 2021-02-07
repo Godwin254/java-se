@@ -42,7 +42,7 @@ public class StudentRegister {
         System.out.printf("Current end-term mark is %d%n", studentA.getEndTermTest());
 
 
-
+        input.close();
     }
 
 

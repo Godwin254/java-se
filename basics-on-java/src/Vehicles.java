@@ -12,6 +12,7 @@ public class Vehicles {
 
         System.out.println(sound);
 
+        sc.close();
     }
 
     static String sounds(String animal){

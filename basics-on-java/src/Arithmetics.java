@@ -80,5 +80,6 @@ public class Arithmetics {
             }
         }while(loopTest);
 
+        sc.close();
     }
 }

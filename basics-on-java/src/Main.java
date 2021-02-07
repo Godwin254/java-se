@@ -12,6 +12,8 @@ public class Main {
         String path = s.nextLine();
         readFile(path);
         // write your code here
+
+        s.close();
     }
 
     public static void readFile(String path) throws FileNotFoundException {
@@ -24,6 +26,8 @@ public class Main {
         add(numbers);
         average(numbers);
         highest(numbers);
+
+
     }
 
     public static void add(List<Integer> numbers) {
@@ -52,6 +56,7 @@ public class Main {
 
         }
     }
+
 }
 
 

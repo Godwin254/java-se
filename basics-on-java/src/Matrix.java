@@ -55,8 +55,8 @@ public class Matrix {
   //print reverse
   static void reverse(int[][] arr){
      System.out.println("Reversed elements\n");
-    for (int i = arr.length; i => 0; i--){
-      for (int j = arr[i].length; j => 0; j--){
+    for (int i = arr.length; i = 0; i--){
+      for (int j = arr[i].length; j = 0; j--){
         System.out.printf("%n%d", arr[i][j]);
       }
     }

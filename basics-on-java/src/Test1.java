@@ -27,6 +27,7 @@ public class Test1 {
         System.out.println();
         System.out.println(Arrays.toString(array2));
 
+        scan.close();
     }
     //reverse method
     public static int[] reverse(int[] list){

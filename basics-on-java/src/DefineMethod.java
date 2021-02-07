@@ -11,6 +11,8 @@ public class DefineMethod {
         int max_num = max(num1, num2);
 
         System.out.println("maximum number is " + max_num);
+
+        input.close();
     }
 
     public static int max(int num1, int num2){
@@ -25,10 +27,4 @@ public class DefineMethod {
         return result;
     }
 
-    private String name;
-
-    //method to set name
-    public void setName(String name){
-        this.name = name;
-    }
 }

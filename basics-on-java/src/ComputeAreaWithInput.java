@@ -18,5 +18,6 @@ public class ComputeAreaWithInput {
         //display area
         System.out.println("The area is  " + area);
 
+        input.close();
     }
 }

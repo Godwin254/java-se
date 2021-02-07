@@ -20,6 +20,7 @@ public class MaximumFinder {
 
         System.out.println("maximum number is " + result);
 
+        input.close();
     }
 
     //method to determine maximum number

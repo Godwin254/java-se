@@ -4,7 +4,7 @@ public class Tokenize2 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        ValidateInput inputs = new ValidateInput();
+        //ValidateInput inputs = new ValidateInput();
         String[] userInputs = new String[7];
 
         System.out.print("Enter first name: ");
@@ -29,19 +29,19 @@ public class Tokenize2 {
         String phone = sc.nextLine();
 
         //validate user inputs
-        if (!inputs.validFirstName(firstName)){
+        if (!ValidateInput.validFirstName(firstName)) {
             System.out.println("Invalid first name");
-        }else if (!inputs.validLastName(lastName)){
+        }else if (!ValidateInput.validLastName(lastName)) {
             System.out.println("Invalid last name");
-        }else if (!inputs.validAddress(address)){
+        }else if (!ValidateInput.validAddress(address)) {
             System.out.println("Invalid address");
-        }else if (!inputs.validCity(city)){
+        }else if (!ValidateInput.validCity(city)) {
             System.out.println("Invalid city name");
-        }else if (!inputs.validState(state)){
+        }else if (!ValidateInput.validState(state)) {
             System.out.println("Invalid state name");
-        }else if (!inputs.validZip(zip)){
+        }else if (!ValidateInput.validZip(zip)) {
             System.out.println("Invalid Zip code");
-        }else if (!inputs.validZip(phone)){
+        }else if (!ValidateInput.validZip(phone)) {
             System.out.println("Invalid phone number");
         }else{
             System.out.println("!!Valid inputs!!");

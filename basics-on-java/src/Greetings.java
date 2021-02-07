@@ -12,6 +12,8 @@ public class Greetings {
         System.out.printf("Hey %s. How are you? %-5.2f%n", username, number); //("Hey " + username + ". How are you?");
 
         System.out.printf("%-10s \t %-10s \t %-10s \t %-10s", "First name", "Last name", "Age", "Gender");
+
+        input.close();
     }
 
 }

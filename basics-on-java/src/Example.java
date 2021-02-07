@@ -21,6 +21,8 @@ public class Example {
         //display items
         System.out.printf("%nLargest number: %d%n", maxVal);
         System.out.printf("%nSmallest number: %d%n", minVal);
+
+        input.close();
     }
 
     public static int getMax(int[] arr){

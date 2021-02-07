@@ -35,5 +35,7 @@ public class Exception1 {
                 System.out.print("Zero is an invalid denominator");
             }
         }while (continueLoop);
+
+        sc.close();
     }
 }
