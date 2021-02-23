@@ -1,15 +1,18 @@
-//import java.util.*;
+import java.util.*;
 
 public class Array1 {
+    private static final Scanner sc = new Scanner(System.in);
 
-    /* 1-dimensional array*/
-    //input elements into the array
-    //static int inputElem(int[] arr) {
-   // }
-    //find largest element in the array
-    //find smallest element in the array
-    //find the sum of elements in the array
-    //find average of elements in the array
+    public static void main(String[] args){
+        //ArrayLIst
+
+        ArrayList<String> data = new ArrayList<>(_size);
+
+        //ask for input size
+        _size = sc.nextInt();
+
+
+    }
 
 }
 
